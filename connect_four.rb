@@ -1,5 +1,6 @@
 require './board'
 require './detect_four'
+require './position'
 
 class Game
   def initialize

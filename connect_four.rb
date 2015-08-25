@@ -21,7 +21,7 @@ class Game
   end
 
   def print_board
-    puts " | " _ (0..6).to_a.join(' | ') + " |"
+    puts " | " + (0..6).to_a.join(' | ') + " |"
     (0..5).to_a.reverse.each do |row|
       @board.grid.each do |column|
         print_position(column[row])

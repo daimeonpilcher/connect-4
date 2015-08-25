@@ -6,7 +6,7 @@ class DetectFour
   end
 
   def in_a_row?
-    [:bar, :dash, :slash, :backslash].each do |axis|
+    [:vertical, :horizonal, :right_diag, :left_diag].each do |axis|
       reset
       count_on axis
       return true if connect_four?
